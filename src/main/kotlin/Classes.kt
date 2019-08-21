@@ -5,7 +5,7 @@ class LocationBean {
     var longitude: Double = .0
 }
 
-class ImmutableLocation(
+class ImmutableLocation constructor(
     val latitude: Double,
     val longitude: Double
 ) {

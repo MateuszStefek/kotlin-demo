@@ -12,8 +12,8 @@ fun sendEmail(to: String, body: String) {
 }
 
 fun welcome(person: Person) {
-    // Does not compile
-//    sendEmail(person.email, "Hello ${person.name}")
+    if (person.email != null)
+        sendEmail(person.email, "Hello ${person.name}")
 }
 
 
